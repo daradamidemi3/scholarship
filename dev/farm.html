@@ -1,2 +1,24 @@
 I am a champion
 This is a new day for me
+
+Steps on how to Create SSH key and Add to you GitHub
+
+1. Go to setting GitHub
+2. SSH/GRP
+3. Create new passkey
+On Git bash
+3.  ls -al ~/.ssh
+4.  ssh-keygen -t rsa -b 4096 -C "your email"
+5. cat ~/.ssh/id_rsa.pub  and copy
+6. Go back to SSH/GRP in setting 
+7. New SSH key
+8. Fill the details and PASTE the copied in 5
+9. Add key
+10. From your repo, copy the SSH url
+11. Go back to git bash, type git clone + SSH url
+12. git remote set-url origin + SSH url
+13. You can now push: git push -u origin branch_name (It will not require username and authentication again)
+
+
+
+
